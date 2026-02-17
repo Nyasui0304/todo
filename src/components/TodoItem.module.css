@@ -1,0 +1,148 @@
+.item {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s;
+}
+
+.item:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.completed {
+  opacity: 0.6;
+}
+
+.checkboxContainer {
+  padding-top: 0.25rem;
+}
+
+.checkbox {
+  width: 1.25rem;
+  height: 1.25rem;
+  cursor: pointer;
+}
+
+.content {
+  flex: 1;
+  min-width: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+  word-break: break-word;
+}
+
+.completed .title {
+  text-decoration: line-through;
+  color: #6b7280;
+}
+
+.priorityBadge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.priorityHigh {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.priorityMedium {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.priorityLow {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.description {
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+.completed .description {
+  text-decoration: line-through;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dueDate {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.overdue {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.editButton,
+.deleteButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.25rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.editButton:hover {
+  background: #eff6ff;
+  transform: scale(1.1);
+}
+
+.deleteButton:hover {
+  background: #fee2e2;
+  transform: scale(1.1);
+}
+
+@media (max-width: 640px) {
+  .item {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .header {
+    flex-wrap: wrap;
+  }
+
+  .actions {
+    justify-content: flex-end;
+    width: 100%;
+  }
+}

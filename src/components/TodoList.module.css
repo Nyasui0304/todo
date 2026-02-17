@@ -1,0 +1,23 @@
+.list {
+  margin-top: 1rem;
+}
+
+.empty {
+  background: white;
+  border-radius: 8px;
+  padding: 3rem 2rem;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.emptyText {
+  font-size: 1.5rem;
+  color: #6b7280;
+  margin: 0 0 0.5rem 0;
+}
+
+.emptySubtext {
+  font-size: 1rem;
+  color: #9ca3af;
+  margin: 0;
+}
